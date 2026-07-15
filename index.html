@@ -1,16 +1,385 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title> SALÃO DA RENATA  </title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salão & Barbearia Premium</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-  <body>
-    <h2> renata cabeleireiro's<h2>
-      <a href="tela-2.html">
-        <img src="https://cdn.freelogodesign.org/files/bc3c4551fb234703bec40ca3c0c72e74/thumb/logo_200x200.png?v=0"
-      </a>
-      <a href="https://www.google.com/maps/place/Av.+Renata,+47+-+Vila+Formosa,+S%C3%A3o+Paulo+-+SP,+03377-000/@-23.5707506,-46.5403379,21z/data=!4m6!3m5!1s0x94ce5dc0d2c2c83f:0xbb4fa6eb2c05028b!8m2!3d-23.570809!4d-46.5402722!16s%2Fg%2F11c2341jfq?entry=ttu">
-<p> AV RENATA,47- VILA FORMOSA- SÃO PAULO </p>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-scissors"></i> PREMIUM
+    </div>
+    <nav class="nav-links">
+      <a href="#" class="nav-dot active" data-slide="0">Início</a>
+      <a href="#" class="nav-dot" data-slide="1">Sobre</a>
+      <a href="#" class="nav-dot" data-slide="2">Serviços</a>
+      <a href="#" class="nav-dot" data-slide="3">Preços</a>
+      <a href="#" class="nav-dot" data-slide="4">Antes & Depois</a>
+      <a href="#" class="nav-dot" data-slide="5">Equipe</a>
+      <a href="#" class="nav-dot" data-slide="6">Agendar</a>
+      <a href="#" class="nav-dot" data-slide="7">FAQ</a>
+    </nav>
+    <button class="btn-cta-header">Agendar Horário</button>
+  </header>
+
+  <main class="slider-wrapper">
+    <div class="slider-inner" id="sliderInner">
+      
+      <section class="slide-screen" id="home">
+        <div class="hero-content">
+          <span class="badge-gold">Estilo & Sofisticação</span>
+          <h1>Sua melhor versão começa aqui</h1>
+          <p>Corte, barba, estética e bem-estar em um ambiente exclusivo projetado para sua experiência premium.</p>
+          <div class="hero-actions">
+            <button class="btn-gold-primary">Agendar Horário <i class="fa-solid fa-calendar-days"></i></button>
+            <button class="btn-outline">Como Chegar <i class="fa-solid fa-map-location-dot"></i></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide-screen" id="sobre">
+        <div class="grid-about">
+          <div class="about-text">
+            <h2>Tradição e Excelência</h2>
+            <p>Há mais de 10 anos, transformamos visualmente a rotina de nossos clientes com técnicas modernas, equipe altamente qualificada e atendimento exclusivo.</p>
+            <div class="about-stats">
+              <div class="stat-box">
+                <span class="stat-num">10+</span>
+                <span class="stat-desc">Anos de História</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-num">15k</span>
+                <span class="stat-desc">Clientes Satisfeitos</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-visual">
+            <div class="visual-placeholder">
+              <i class="fa-solid fa-chair"></i>
+              <p>Espaço Premium Barber & Beauty</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide-screen" id="servicos">
+        <div class="services-content">
+          <h2>Nossos Serviços</h2>
+          <p class="subtitle">Selecione uma categoria para conhecer nossas especialidades</p>
+          
+          <div class="services-categories">
+            <div class="category-card">
+              <i class="fa-solid fa-user-tie"></i>
+              <h3>Masculino</h3>
+              <p>Corte degradê, barba premium com toalha quente e tratamentos capilares.</p>
+            </div>
+            <div class="category-card">
+              <i class="fa-solid fa-spa"></i>
+              <h3>Feminino</h3>
+              <p>Mechas, cronograma capilar, progressivas e finalizações incríveis.</p>
+            </div>
+            <div class="category-card">
+              <i class="fa-solid fa-hand-sparkles"></i>
+              <h3>Unhas & Spa</h3>
+              <p>Alongamento em gel, spa dos pés e nail arts personalizadas.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide-screen" id="detalhes-servicos">
+        <div class="services-detail-container">
+          <h2>Tabela de Serviços & Preços</h2>
+          <p class="subtitle">Tratamentos personalizados com produtos das melhores marcas do mercado.</p>
+          
+          <div class="menu-precos-grid">
+            <div class="preco-col">
+              <h3><i class="fa-solid fa-mustache"></i> Masculino</h3>
+              <ul>
+                <li><span>Corte Degradê / Social</span> <strong>R$ 60</strong></li>
+                <li><span>Barba Premium (Toalha Quente)</span> <strong>R$ 50</strong></li>
+                <li><span>Combo Corte + Barba</span> <strong>R$ 100</strong></li>
+                <li><span>Sobrancelha Navalha</span> <strong>R$ 20</strong></li>
+                <li><span>Selagem Capilar</span> <strong>R$ 90</strong></li>
+              </ul>
+            </div>
+
+            <div class="preco-col">
+              <h3><i class="fa-solid fa-venus"></i> Feminino</h3>
+              <ul>
+                <li><span>Corte Design + Escova</span> <strong>R$ 120</strong></li>
+                <li><span>Mechas / Luzes (Truss/Wella)</span> <strong>R$ 350+</strong></li>
+                <li><span>Progressiva Orgânica</span> <strong>R$ 250+</strong></li>
+                <li><span>Cronograma Capilar Premium</span> <strong>R$ 150</strong></li>
+                <li><span>Botox Capilar</span> <strong>R$ 180</strong></li>
+              </ul>
+            </div>
+
+            <div class="preco-col">
+              <h3><i class="fa-solid fa-hand-sparkles"></i> Unhas & Bem-Estar</h3>
+              <ul>
+                <li><span>Manicure + Pedicure Tradicional</span> <strong>R$ 70</strong></li>
+                <li><span>Esmaltação em Gel</span> <strong>R$ 80</strong></li>
+                <li><span>Alongamento em Gel / Fibra</span> <strong>R$ 180</strong></li>
+                <li><span>Spa dos Pés Completo</span> <strong>R$ 90</strong></li>
+                <li><span>Nail Art (Por Unha)</span> <strong>R$ 10</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide-screen" id="antes-depois">
+        <div class="transformation-container">
+          <h2>Antes e Depois</h2>
+          <p class="subtitle">Arraste o cursor ou toque para ver o poder das nossas transformações de perto.</p>
+          
+          <div class="gallery-transform-grid">
+            <div class="transform-card">
+              <div class="image-compare-box">
+                <div class="img-after" style="background-image: url('https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=600');"></div>
+                <div class="img-before" id="beforeImg1" style="background-image: url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=600');"></div>
+                <input type="range" min="0" max="100" value="50" class="slider-compare" oninput="compareImages(this, 'beforeImg1')">
+                <span class="badge-compare before">Antes</span>
+                <span class="badge-compare after">Depois</span>
+              </div>
+              <h4>Corte Degradê & Alinhamento de Barba</h4>
+            </div>
+
+            <div class="transform-card">
+              <div class="image-compare-box">
+                <div class="img-after" style="background-image: url('https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=600');"></div>
+                <div class="img-before" id="beforeImg2" style="background-image: url('https://images.unsplash.com/photo-1605497746444-17f73d93d48d?q=80&w=600');"></div>
+                <input type="range" min="0" max="100" value="50" class="slider-compare" oninput="compareImages(this, 'beforeImg2')">
+                <span class="badge-compare before">Antes</span>
+                <span class="badge-compare after">Depois</span>
+              </div>
+              <h4>Iluminação e Mechas Criativas</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide-screen" id="equipe-horarios">
+        <div class="team-schedule-container">
+          
+          <div class="team-section">
+            <h2>Nossa Equipe</h2>
+            <p class="subtitle">Profissionais certificados com experiência nas últimas tendências do mercado.</p>
+            
+            <div class="team-grid">
+              <div class="team-card">
+                <div class="team-avatar">
+                  <i class="fa-solid fa-user-ninja"></i>
+                </div>
+                <h4>Lucas Barber</h4>
+                <span class="specialty">Especialista em Degradê & Barba</span>
+                <p class="experience">7 anos de experiência</p>
+              </div>
+
+              <div class="team-card">
+                <div class="team-avatar">
+                  <i class="fa-solid fa-sparkles"></i>
+                </div>
+                <h4>Amanda Silva</h4>
+                <span class="specialty">Colorimetria & Mega Hair</span>
+                <p class="experience">9 anos de experiência</p>
+              </div>
+
+              <div class="team-card">
+                <div class="team-avatar">
+                  <i class="fa-solid fa-gem"></i>
+                </div>
+                <h4>Juliana Costa</h4>
+                <span class="specialty">Nail Designer & Estética</span>
+                <p class="experience">5 anos de experiência</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottom-info-grid">
+            <div class="perks-box">
+              <h3><i class="fa-solid fa-mug-hot"></i> Diferenciais</h3>
+              <div class="perks-tags">
+                <span><i class="fa-solid fa-wifi"></i> Wi-Fi Ultra Rápido</span>
+                <span><i class="fa-solid fa-snowflake"></i> Ambiente Climatizado</span>
+                <span><i class="fa-solid fa-car"></i> Estacionamento Gratuito</span>
+                <span><i class="fa-solid fa-mug-hot"></i> Café & Bebidas</span>
+              </div>
+            </div>
+
+            <div class="schedule-box">
+              <h3><i class="fa-solid fa-clock"></i> Horários</h3>
+              <div class="schedule-lines">
+                <p><span>Terça a Sexta:</span> <strong>09h às 20h</strong></p>
+                <p><span>Sábado:</span> <strong>08h às 19h</strong></p>
+                <p><span>Domingo e Segunda:</span> <strong>Fechado</strong></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="slide-screen" id="agendamento-online">
+        <div class="booking-container">
+          <div class="booking-grid">
+            
+            <div class="booking-form-side">
+              <div class="booking-header">
+                <h2>Reserve seu Horário</h2>
+                <p>Escolha o serviço e o profissional de sua preferência.</p>
+              </div>
+              
+              <form id="appointmentForm" class="booking-form" onsubmit="handleBooking(event)">
+                <div class="form-row">
+                  <div class="input-group">
+                    <label>Nome Completo</label>
+                    <input type="text" placeholder="Como quer ser chamado?" required>
+                  </div>
+                  <div class="input-group">
+                    <label>WhatsApp</label>
+                    <input type="tel" placeholder="(00) 00000-0000" required>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="input-group">
+                    <label>Serviço Desejado</label>
+                    <select required>
+                      <option value="" disabled selected>Selecione o serviço</option>
+                      <optgroup label="Masculino">
+                        <option>Corte / Degradê</option>
+                        <option>Barba Premium</option>
+                        <option>Combo Corte + Barba</option>
+                      </optgroup>
+                      <optgroup label="Feminino">
+                        <option>Corte Design</option>
+                        <option>Mechas / Luzes</option>
+                        <option>Progressiva / Selagem</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                  <div class="input-group">
+                    <label>Profissional</label>
+                    <select required>
+                      <option value="" disabled selected>Qualquer profissional</option>
+                      <option>Lucas Barber</option>
+                      <option>Amanda Silva</option>
+                      <option>Juliana Costa</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="input-group">
+                    <label>Data</label>
+                    <input type="date" required>
+                  </div>
+                  <div class="input-group">
+                    <label>Horário</label>
+                    <input type="time" required>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn-confirm-booking">
+                  Confirmar Agendamento <i class="fa-solid fa-check-double"></i>
+                </button>
+              </form>
+            </div>
+
+            <div class="booking-info-side">
+              <div class="info-card-glass">
+                <h3>Por que agendar online?</h3>
+                <ul class="booking-perks">
+                  <li><i class="fa-solid fa-bolt"></i> <span>Confirmação imediata via WhatsApp.</span></li>
+                  <li><i class="fa-solid fa-bell"></i> <span>Lembretes automáticos 2h antes.</span></li>
+                  <li><i class="fa-solid fa-calendar-xmark"></i> <span>Cancelamento fácil em até 24h.</span></li>
+                </ul>
+                
+                <div class="direct-contact">
+                  <p>Prefere falar conosco?</p>
+                  <a href="https://wa.me/seunumeroaqui" class="btn-whatsapp-direct" target="_blank">
+                    Chamar no WhatsApp <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="slide-screen" id="faq-rodape">
+        <div class="faq-footer-container">
+          
+          <div class="faq-section">
+            <h2>Dúvidas Frequentes</h2>
+            <p class="subtitle">Tem alguma pergunta? Veja as respostas para as dúvidas mais comuns.</p>
+            
+            <div class="faq-grid">
+              <div class="faq-item">
+                <button class="accordion-faq">
+                  <span>Preciso agendar horário ou posso ir direto?</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel-faq">
+                  <p>Trabalhamos prioritariamente com agendamento para garantir que você não pegue fila e seja atendido exatamente no seu horário. Mas, se tivermos profissionais livres no momento, teremos o maior prazer em te atender diretamente!</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="accordion-faq">
+                  <span>Quais formas de pagamento vocês aceitam?</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel-faq">
+                  <p>Aceitamos todas as principais formas de pagamento: Pix, Cartões de Crédito e Débito (todas as bandeiras) e dinheiro.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="accordion-faq">
+                  <span>Vocês fazem atendimento infantil?</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel-faq">
+                  <p>Sim! Temos profissionais especializados e um ambiente super acolhedor para atender crianças com paciência, carinho e muito estilo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <footer class="footer-wrapper">
+            <div class="footer-divider"></div>
+            <div class="footer-content">
+              <div class="footer-logo">
+                <i class="fa-solid fa-scissors"></i> PREMIUM
+              </div>
+              <div class="footer-socials">
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              </div>
+              <p class="copyright">© 2026 Premium Barber & Beauty. Todos os direitos reservados.</p>
+            </div>
+          </footer>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <a href="https://wa.me/seunumeroaqui" class="whatsapp-float" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
